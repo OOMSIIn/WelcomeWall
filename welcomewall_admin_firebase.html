@@ -2,7 +2,9 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>WelcomeWall — Admin Panel</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
 <style>
   :root{
     --navy:#2E2E2E; --navy-deep:#1F1F1F; --paper:#FFFFFF;
@@ -14,35 +16,36 @@
 
   header{
     background:#FFFFFF; color:var(--navy); border-bottom:1px solid var(--line);
-    padding:18px 36px;
+    padding:clamp(10px,2vw,18px) clamp(14px,4vw,36px);
   }
-  header .top-row{display:flex; align-items:center; justify-content:space-between;}
+  header .top-row{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;}
   header .logo{display:flex; align-items:center; gap:14px;}
-  header .status{font-size:13px; color:var(--good); display:flex; align-items:center; gap:6px;}
-  header .status .dot{width:8px; height:8px; border-radius:50%; background:var(--good);}
+  header .logo img{ height:clamp(26px,4vw,40px); width:auto; }
+  header .status{font-size:12px; color:var(--good); display:flex; align-items:center; gap:6px; white-space:nowrap;}
+  header .status .dot{width:8px; height:8px; border-radius:50%; background:var(--good); flex-shrink:0;}
 
   .title-banner{
     background:#FFFFFF;
     border-bottom:1px solid var(--line);
-    padding:16px 36px;
-    display:flex; align-items:baseline; gap:14px;
+    padding:clamp(10px,2vw,16px) clamp(14px,4vw,36px);
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
   }
-  .title-banner h1{font-size:20px; font-weight:600; margin:0; color:var(--navy);}
-  .title-banner .sub{font-size:13px; color:var(--slate);}
+  .title-banner h1{font-size:18px; font-weight:600; margin:0; color:var(--navy);}
+  .title-banner .sub{font-size:12px; color:var(--slate);}
 
   .layout{
     display:grid; grid-template-columns:1fr 420px;
-    gap:28px; padding:14px 36px 28px; max-width:1500px; margin:0 auto;
+    gap:24px; padding:14px clamp(14px,4vw,36px) 28px; max-width:1500px; margin:0 auto;
   }
 
   .page-label{
     color:var(--slate); font-size:13px; margin-bottom:14px;
   }
 
-  .tabs{display:flex; gap:8px; margin-bottom:20px;}
+  .tabs{display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap;}
   .tab{
-    padding:10px 20px; border-radius:8px; background:var(--card); border:1px solid var(--line);
-    cursor:pointer; font-size:14px; font-weight:600; color:var(--slate);
+    padding:9px 16px; border-radius:8px; background:var(--card); border:1px solid var(--line);
+    cursor:pointer; font-size:13px; font-weight:600; color:var(--slate); white-space:nowrap;
   }
   .tab.active{background:var(--navy); color:var(--paper); border-color:var(--navy);}
 
@@ -51,16 +54,16 @@
 
   .card{
     background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:24px; margin-bottom:20px;
+    padding:clamp(14px,3vw,24px); margin-bottom:20px;
   }
   .card h3{margin:0 0 16px; font-size:16px;}
 
   .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
-  .field{display:flex; flex-direction:column; gap:6px;}
+  .field{display:flex; flex-direction:column; gap:6px; min-width:0;}
   .field.full{grid-column:1/-1;}
   label{font-size:13px; color:var(--slate); font-weight:600;}
-  input[type=text], input[type=time], textarea, select{
-    padding:10px 12px; border:1px solid var(--line); border-radius:7px; font-size:14px; outline:none;
+  input[type=text], input[type=time], input[type=number], textarea, select{
+    width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:7px; font-size:16px; outline:none;
   }
   input:focus, textarea:focus, select:focus{border-color:var(--amber);}
   textarea{resize:vertical; min-height:60px;}
@@ -85,9 +88,10 @@
   }
   .list-row:last-child{border-bottom:none;}
   .list-row img.avatar{width:46px; height:46px; border-radius:50%; object-fit:cover; background:#ddd;}
-  .list-row .info{flex:1;}
-  .list-row .name{font-weight:700; font-size:14px;}
-  .list-row .meta{font-size:12px; color:var(--slate); margin-top:2px;}
+  .list-row .info{flex:1; min-width:0;}
+  .list-row .name{font-weight:700; font-size:14px; overflow-wrap:break-word; word-break:break-all;}
+  .list-row .meta{font-size:12px; color:var(--slate); margin-top:2px; overflow-wrap:break-word; word-break:break-all;}
+  .icon-btn{flex-shrink:0;}
   .list-row .tag{
     font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px;
     background:rgba(94,156,118,0.12); color:var(--good);
@@ -123,6 +127,15 @@
     text-align:center; font-size:12px; color:var(--slate); margin-top:10px; font-weight:600;
   }
 
+  .pv-view{ display:none; }
+  .pv-view.active{ display:block; }
+  .pv-news-item{ padding:8px 0; border-bottom:1px solid rgba(246,243,236,0.1); }
+  .pv-news-item .tag{ font-size:7px; letter-spacing:1px; text-transform:uppercase; font-weight:700; color:var(--amber); }
+  .pv-news-item .ttl{ font-size:10px; font-weight:700; margin-top:2px; }
+  .pv-news-item .dsc{ font-size:7px; color:var(--slate); margin-top:2px; }
+  .pv-photo-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:10px; }
+  .pv-photo-grid img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:4px; display:block; }
+
   .empty{color:var(--slate); font-size:13px; padding:10px 0;}
 
   .photo-grid{
@@ -135,6 +148,33 @@
   .photo-grid .thumb .remove{
     position:absolute; top:4px; right:4px; background:rgba(0,0,0,0.6); color:#fff; border:none;
     width:22px; height:22px; border-radius:50%; cursor:pointer; font-size:13px; line-height:1;
+  }
+
+  /* ---- responsive: แท็บเล็ต/จอแคบ — เอาพรีวิวลงมาไว้ใต้ฟอร์ม แทนที่จะเบียดคอลัมน์ ---- */
+  @media (max-width: 980px){
+    .layout{
+      grid-template-columns: 1fr;
+      max-width: 640px;
+    }
+    .preview-wrap{
+      position:static;
+      width:100%;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  }
+
+  /* ---- responsive: มือถือ — ฟอร์มเรียงเป็นคอลัมน์เดียว ลด padding ---- */
+  @media (max-width: 560px){
+    body{ overflow-x:hidden; }
+    .layout{ gap:16px; padding:12px 14px 24px; }
+    .form-grid{ grid-template-columns:1fr; }
+    .btn-row{ flex-wrap:wrap; }
+    .btn{ flex:1; min-width:120px; }
+    .tab{ flex:1; text-align:center; padding:9px 8px; }
+    header .status{ white-space:normal; font-size:11px; }
+    .title-banner{ gap:4px; }
+    .preview-wrap{ width:100%; max-width:none; margin:0; }
   }
 </style>
 </head>
@@ -156,6 +196,8 @@
       <div class="tab active" data-tab="guests">นัดหมายแขก</div>
       <div class="tab" data-tab="news">ข่าว/ประกาศ</div>
       <div class="tab" data-tab="photos">รูปภาพ</div>
+      <div class="tab" data-tab="screens">จัดการจอ</div>
+      <div class="tab" data-tab="settings">ตั้งค่า</div>
     </div>
 
     <!-- GUESTS PANEL -->
@@ -163,22 +205,30 @@
       <div class="card">
         <h3>เพิ่มแขกใหม่</h3>
         <div class="form-grid">
-          <div class="field"><label>เวลานัด</label><input type="time" id="g-time" value="10:00"></div>
+          <div class="field"><label>เวลานัด</label>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <select id="g-time-h" autocomplete="off" style="flex:1;"></select>
+              <span style="color:var(--slate); font-weight:700;">:</span>
+              <select id="g-time-m" autocomplete="off" style="flex:1;"></select>
+            </div>
+          </div>
           <div class="field"><label>สถานะ</label>
             <select id="g-status">
               <option value="waiting">กำลังมา</option>
               <option value="arrived">ถึงแล้ว</option>
             </select>
           </div>
-          <div class="field full"><label>ชื่อแขก</label><input type="text" id="g-name" placeholder="เช่น คุณสมชาย ใจดี"></div>
-          <div class="field"><label>บริษัท/หน่วยงาน</label><input type="text" id="g-company" placeholder="เช่น ABC Logistics"></div>
-          <div class="field"><label>พบกับ / ห้องประชุม</label><input type="text" id="g-meta" placeholder="เช่น พบคุณวิชัย · ห้อง A"></div>
+          <div class="field full"><label>ชื่อแขก</label><input type="text" id="g-name" autocomplete="off"></div>
+          <div class="field"><label>บริษัท/หน่วยงาน</label><input type="text" id="g-company" autocomplete="off"></div>
+          <div class="field"><label>พบกับ / ห้องประชุม</label><input type="text" id="g-meta" autocomplete="off" placeholder="เช่น พบคุณวิชัย · ห้องประชุมตึก Admin"></div>
           <div class="field full"><label>รูปแขก (ถ้ามี)</label>
             <div class="photo-drop" id="g-drop">
               <span id="g-drop-label">คลิกเพื่ออัปโหลดรูป หรือเว้นว่างไว้</span>
               <input type="file" accept="image/*" id="g-photo">
             </div>
+            <button type="button" class="btn btn-ghost" id="g-photo-remove" style="display:none; margin-top:8px;" onclick="removeGuestPhoto()">ลบรูปนี้</button>
           </div>
+          <div id="g-screen-selector"></div>
           <div class="btn-row">
             <button class="btn btn-primary" onclick="addGuest()">+ เพิ่มแขกนี้</button>
             <button class="btn btn-ghost" onclick="clearGuestForm()">ล้างฟอร์ม</button>
@@ -204,9 +254,10 @@
               <option value="notice">ประกาศ</option>
             </select>
           </div>
-          <div class="field"><label>วันที่/เวลา</label><input type="text" id="n-date" placeholder="เช่น ศุกร์ 11 ก.ค. 2569 · 18:00"></div>
-          <div class="field full"><label>หัวข้อ</label><input type="text" id="n-title" placeholder="เช่น งานเลี้ยงสังสรรค์กลางปี"></div>
-          <div class="field full"><label>รายละเอียด</label><textarea id="n-desc" placeholder="รายละเอียดเพิ่มเติม..."></textarea></div>
+          <div class="field"><label>วันที่/เวลา</label><input type="text" id="n-date" autocomplete="off"></div>
+          <div class="field full"><label>หัวข้อ</label><input type="text" id="n-title" autocomplete="off"></div>
+          <div class="field full"><label>รายละเอียด</label><textarea id="n-desc" autocomplete="off"></textarea></div>
+          <div id="n-screen-selector"></div>
           <div class="btn-row">
             <button class="btn btn-primary" onclick="addNews()">+ เพิ่มประกาศนี้</button>
             <button class="btn btn-ghost" onclick="clearNewsForm()">ล้างฟอร์ม</button>
@@ -228,11 +279,57 @@
           <span id="p-drop-label">คลิกเพื่ออัปโหลดรูป</span>
           <input type="file" accept="image/*" id="p-photo">
         </div>
+        <div id="p-screen-selector"></div>
+        <div class="btn-row" style="margin-top:8px;">
+          <button type="button" class="btn btn-primary" id="p-photo-save" style="display:none;" onclick="savePhoto()">+ เพิ่มรูปนี้</button>
+          <button type="button" class="btn btn-ghost" id="p-photo-remove" style="display:none;" onclick="removeStagedPhoto()">ลบรูปนี้</button>
+        </div>
       </div>
 
       <div class="card">
         <h3>รูปภาพทั้งหมด (<span id="photo-count">0</span>)</h3>
         <div id="photo-grid" class="photo-grid"></div>
+      </div>
+    </div>
+
+    <!-- SCREENS PANEL -->
+    <div class="panel" id="panel-screens">
+      <div class="card">
+        <h3>เพิ่มจอใหม่</h3>
+        <div class="form-grid">
+          <div class="field"><label>รหัสจอ (ใช้ในลิงก์ ห้ามเว้นวรรค/เครื่องหมายพิเศษ)</label>
+            <input type="text" id="sc-key" autocomplete="off" placeholder="เช่น screen2"></div>
+          <div class="field"><label>ชื่อจอ (สำหรับแสดงในหน้านี้เท่านั้น)</label>
+            <input type="text" id="sc-name" autocomplete="off" placeholder="เช่น จอที่ 2 - ล็อบบี้ตึก B"></div>
+          <div class="btn-row">
+            <button class="btn btn-primary" onclick="addScreen()">+ เพิ่มจอนี้</button>
+          </div>
+        </div>
+        <p style="color:var(--slate); font-size:13px; margin-top:14px;">
+          เพิ่มจอแล้ว checkbox "แสดงที่จอ" จะโผล่ในฟอร์มแขก/ข่าว/รูปภาพให้เลือกได้ทันที
+          จอที่ต้องเปิดจริง ใช้ลิงก์ <code>display.html?screen=รหัสจอ</code> (แทน "รหัสจอ" ด้วยค่าที่ตั้งไว้)
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>จอทั้งหมด (<span id="screen-count">0</span>)</h3>
+        <div id="screen-list"></div>
+      </div>
+    </div>
+
+    <!-- SETTINGS PANEL -->
+    <div class="panel" id="panel-settings">
+      <div class="card">
+        <h3>เวลาแสดงผลแต่ละหน้าจอ</h3>
+        <div id="settings-screen-list"></div>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="saveAllSettings()">บันทึกการตั้งค่า</button>
+        </div>
+        <p style="color:var(--muted, #888); font-size:13px; margin-top:14px;">
+          ค่านี้คือเวลาที่แต่ละจอจะแสดงแต่ละหน้า (เช่น หน้าต้อนรับ, หน้าข่าวสาร) ก่อนจะสลับไปหน้าถัดไปอัตโนมัติ
+          ตั้ง "จอหลัก" ไว้เป็นค่าเริ่มต้น ส่วนจอที่ตั้งชื่อไว้ ถ้าไม่ได้กำหนดเวลาเฉพาะ จะใช้ค่าของ "จอหลัก" แทน
+          บันทึกแล้วจอจะอัปเดตให้เองแบบเรียลไทม์ โดยไม่ต้องรีเฟรชหน้าจอ
+        </p>
       </div>
     </div>
   </div>
@@ -245,9 +342,32 @@
         <div class="time" id="pv-time">09:24</div>
       </div>
       <div class="preview-body" id="pv-body">
-        <div class="eyebrow">ยินดีต้อนรับ · Welcome</div>
-        <div class="head">ยินดีต้อนรับแขกที่มาเยือน<br><b id="pv-guest-count">วันนี้ 0 ราย</b></div>
-        <div id="pv-guest-list"><div class="empty" style="font-size:10px;">ยังไม่มีแขกนัดไว้วันนี้</div></div>
+        <div class="pv-view active" id="pv-view-guests">
+          <div class="eyebrow">ยินดีต้อนรับ · Welcome</div>
+          <div class="head">ยินดีต้อนรับแขกที่มาเยือน<br><b id="pv-guest-count">วันนี้ 0 ราย</b></div>
+          <div id="pv-guest-list"><div class="empty" style="font-size:10px;">ยังไม่มีแขกนัดไว้วันนี้</div></div>
+        </div>
+        <div class="pv-view" id="pv-view-news">
+          <div class="eyebrow">ข่าวสารองค์กร · Announcements</div>
+          <div class="head">เรื่องที่ทุกคน<br><b>ควรรู้สัปดาห์นี้</b></div>
+          <div id="pv-news-list"><div class="empty" style="font-size:10px;">ยังไม่มีประกาศ</div></div>
+        </div>
+        <div class="pv-view" id="pv-view-photos">
+          <div class="eyebrow">แกลเลอรีภาพ · Gallery</div>
+          <div class="head">ภาพบรรยากาศ<br><b>ภายในองค์กร</b></div>
+          <div id="pv-photo-grid" class="pv-photo-grid"></div>
+          <div class="empty" style="font-size:10px;" id="pv-photo-empty">ยังไม่มีรูปภาพ — ถ้าไม่มีรูป หน้านี้จะไม่ขึ้นแสดงบนจอ</div>
+        </div>
+        <div class="pv-view" id="pv-view-screens">
+          <div class="eyebrow">จัดการจอ · Screens</div>
+          <div class="head">รายชื่อจอ<br><b>ในระบบทั้งหมด</b></div>
+          <div class="empty" style="font-size:10px;">แท็บนี้ไว้จัดการรายชื่อจอ ไม่มีภาพตัวอย่างเฉพาะ</div>
+        </div>
+        <div class="pv-view" id="pv-view-settings">
+          <div class="eyebrow">การตั้งค่า · Settings</div>
+          <div class="head">เวลาแสดงผล<br><b>แต่ละหน้าจอ</b></div>
+          <div class="empty" style="font-size:10px;">การตั้งค่านี้มีผลกับจังหวะสลับหน้าของทุกหน้าจอ ไม่มีภาพตัวอย่างเฉพาะ</div>
+        </div>
       </div>
     </div>
     <div class="preview-label">↑ ภาพตัวอย่างจอแสดงผลแบบเรียลไทม์</div>
@@ -255,37 +375,82 @@
 </div>
 
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import {
-    getFirestore, collection, addDoc, deleteDoc, doc,
-    onSnapshot, orderBy, query, serverTimestamp
-  } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import PocketBase from "https://cdn.jsdelivr.net/npm/pocketbase@0.21.5/dist/pocketbase.es.mjs";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyCxrD0TS9AHP5rajeG-G0FAqIM2CGzHgQE",
-    authDomain: "welcomewall-fc0ed.firebaseapp.com",
-    projectId: "welcomewall-fc0ed",
-    storageBucket: "welcomewall-fc0ed.firebasestorage.app",
-    messagingSenderId: "1062771390323",
-    appId: "1:1062771390323:web:de2509cbd9ee85c1e3f706"
-  };
+  // TODO: เปลี่ยนเป็น URL ของ PocketBase server จริงของคุณ เช่น "https://your-app.pockethost.io"
+  const POCKETBASE_URL = "http://127.0.0.1:8090";
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+  const pb = new PocketBase(POCKETBASE_URL);
+  pb.autoCancellation(false); // กันไม่ให้ request ยกเลิกกันเองตอน realtime ยิงถี่ๆ
 
   // ---- state ----
   let guests = [];
   let news = [];
   let photos = [];
   let guestPhotoData = null;
+  let stagedPhotoData = null;
+
+  // ---- รายชื่อจอแสดงผลทั้งหมดในระบบ (โหลดจาก PocketBase collection 'screens') ----
+  // ถ้ายังไม่มีจอไหนถูกเพิ่มไว้เลย (SCREENS ว่าง) จะไม่มี UI เลือกจอโผล่ขึ้นมา
+  // ข้อมูลทุกอย่างจะขึ้นจอเดียวที่มีอยู่เหมือนเดิมทุกประการ
+  let SCREENS = [];
+
+  // สร้าง HTML checkbox กลุ่มเลือกจอ ไว้แทรกในฟอร์ม (คืนค่าว่างถ้ามีจอเดียวหรือไม่มีจอที่ลงทะเบียนเลย)
+  function renderScreenCheckboxes(groupId){
+    if(SCREENS.length === 0) return ''; // ยังไม่มีจอเพิ่มเลย = ใช้งานแบบจอเดียวปกติ ไม่ต้องมี UI เลือกจอ
+    const boxes = SCREENS.map(s => `
+      <label style="display:inline-flex; align-items:center; gap:6px; margin:4px 12px 4px 0; font-weight:400; font-size:13px;">
+        <input type="checkbox" class="${groupId}-screen-cb" value="${s.id}"> ${s.label}
+      </label>
+    `).join('');
+    return `
+      <div class="field full">
+        <label>แสดงที่จอ (เว้นว่าง = แสดงทุกจอ)</label>
+        <div>${boxes}</div>
+      </div>
+    `;
+  }
+
+  // อ่านค่าที่ติ๊กไว้จากกลุ่ม checkbox แล้วแปลงเป็นสตริงเก็บลง PocketBase
+  // รูปแบบ ",default,screen2," (มี comma คั่นหน้า-หลัง กันปัญหาจับคู่ชื่อจอที่พ้องกันบางส่วน)
+  function getSelectedScreens(groupId){
+    const checked = Array.from(document.querySelectorAll('.'+groupId+'-screen-cb:checked')).map(el => el.value);
+    if(checked.length === 0) return ''; // ว่าง = แสดงทุกจอ
+    return ',' + checked.join(',') + ',';
+  }
+
+  // เติม checkbox เลือกจอเข้าไปในฟอร์มทั้ง 3 ใหม่ (เรียกซ้ำได้ทุกครั้งที่รายชื่อจอเปลี่ยน)
+  function refreshScreenSelectors(){
+    document.getElementById('g-screen-selector').innerHTML = renderScreenCheckboxes('g');
+    document.getElementById('n-screen-selector').innerHTML = renderScreenCheckboxes('n');
+    document.getElementById('p-screen-selector').innerHTML = renderScreenCheckboxes('p');
+  }
+
+  // ---- เติมตัวเลือกชั่วโมง/นาที ให้ dropdown เวลานัด ----
+  (function initTimeSelects(){
+    const hSel = document.getElementById('g-time-h');
+    const mSel = document.getElementById('g-time-m');
+    for(let h=0; h<24; h++){
+      const v = String(h).padStart(2,'0');
+      hSel.innerHTML += `<option value="${v}">${v} น.</option>`;
+    }
+    for(let m=0; m<60; m+=5){
+      const v = String(m).padStart(2,'0');
+      mSel.innerHTML += `<option value="${v}">${v}</option>`;
+    }
+    hSel.value = '10';
+    mSel.value = '00';
+  })();
 
   // ---- tabs ----
   document.querySelectorAll('.tab').forEach(t=>{
     t.onclick = ()=>{
       document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
       document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+      document.querySelectorAll('.pv-view').forEach(x=>x.classList.remove('active'));
       t.classList.add('active');
       document.getElementById('panel-'+t.dataset.tab).classList.add('active');
+      document.getElementById('pv-view-'+t.dataset.tab).classList.add('active');
     };
   });
 
@@ -297,9 +462,17 @@
     reader.onload = ev => {
       guestPhotoData = ev.target.result;
       document.getElementById('g-drop-label').innerHTML = '<img src="'+guestPhotoData+'"><br>เปลี่ยนรูป';
+      document.getElementById('g-photo-remove').style.display = 'inline-block';
     };
     reader.readAsDataURL(file);
   });
+
+  window.removeGuestPhoto = function(){
+    guestPhotoData = null;
+    document.getElementById('g-photo').value = '';
+    document.getElementById('g-drop-label').textContent = 'คลิกเพื่ออัปโหลดรูป หรือเว้นว่างไว้';
+    document.getElementById('g-photo-remove').style.display = 'none';
+  };
 
   // ---- gallery photos ----
   document.getElementById('p-photo').addEventListener('change', function(e){
@@ -307,31 +480,65 @@
     if(!file) return;
     const reader = new FileReader();
     reader.onload = ev => {
-      photos.push(ev.target.result);
-      renderPhotos();
-      e.target.value = '';
+      stagedPhotoData = ev.target.result;
+      document.getElementById('p-drop-label').innerHTML = '<img src="'+stagedPhotoData+'"><br>เปลี่ยนรูป';
+      document.getElementById('p-photo-save').style.display = 'inline-block';
+      document.getElementById('p-photo-remove').style.display = 'inline-block';
     };
     reader.readAsDataURL(file);
   });
 
-  function removePhoto(i){ photos.splice(i,1); renderPhotos(); }
+  window.removeStagedPhoto = function(){
+    stagedPhotoData = null;
+    document.getElementById('p-photo').value = '';
+    document.getElementById('p-drop-label').textContent = 'คลิกเพื่ออัปโหลดรูป';
+    document.getElementById('p-photo-save').style.display = 'none';
+    document.getElementById('p-photo-remove').style.display = 'none';
+    document.querySelectorAll('.p-screen-cb').forEach(cb => cb.checked = false);
+  };
+
+  window.savePhoto = async function(){
+    if(!stagedPhotoData) return;
+    const btn = document.getElementById('p-photo-save');
+    btn.textContent = 'กำลังบันทึก...'; btn.disabled = true;
+    try{
+      await pb.collection('photos').create({ image: stagedPhotoData, screens: getSelectedScreens('p') });
+      removeStagedPhoto();
+    }catch(err){ alert('อัปโหลดรูปไม่สำเร็จ: '+err.message); }
+    btn.textContent = '+ เพิ่มรูปนี้'; btn.disabled = false;
+  };
+
+  window.removePhoto = async function(id){
+    if(!confirm('ลบรูปนี้?')) return;
+    try{ await pb.collection('photos').delete(id); }
+    catch(err){ alert('ลบไม่สำเร็จ: '+err.message); }
+  };
 
   function renderPhotos(){
     const grid = document.getElementById('photo-grid');
     document.getElementById('photo-count').textContent = photos.length;
     if(!photos.length){
       grid.innerHTML = '<div class="empty">ยังไม่มีรูปภาพ — อัปโหลดด้านบน</div>';
-      return;
+    } else {
+      grid.innerHTML = '';
+      photos.forEach(p=>{
+        const div = document.createElement('div');
+        div.className='thumb';
+        div.innerHTML = `<img src="${p.image}"><button class="remove" onclick="removePhoto('${p.id}')">×</button>`;
+        grid.appendChild(div);
+      });
     }
-    grid.innerHTML = '';
-    photos.forEach((src,i)=>{
-      const div = document.createElement('div');
-      div.className='thumb';
-      div.innerHTML = `<img src="${src}"><button class="remove" onclick="removePhoto(${i})">×</button>`;
-      grid.appendChild(div);
-    });
+    // preview ด้านขวา
+    const pvGrid = document.getElementById('pv-photo-grid');
+    const pvEmpty = document.getElementById('pv-photo-empty');
+    if(!photos.length){
+      pvGrid.innerHTML = '';
+      pvEmpty.style.display = 'block';
+    } else {
+      pvEmpty.style.display = 'none';
+      pvGrid.innerHTML = photos.slice(0,9).map(p=>`<img src="${p.image}">`).join('');
+    }
   }
-  renderPhotos();
 
   // ---- add guest ----
   window.addGuest = async function(){
@@ -340,15 +547,15 @@
     const btn = document.querySelector('[onclick="addGuest()"]');
     btn.textContent = 'กำลังบันทึก...'; btn.disabled = true;
     try {
-      await addDoc(collection(db, 'guests'), {
-        time: document.getElementById('g-time').value,
+      await pb.collection('guests').create({
+        time: document.getElementById('g-time-h').value + ':' + document.getElementById('g-time-m').value,
         status: document.getElementById('g-status').value,
         name: name,
         company: document.getElementById('g-company').value,
         meta: document.getElementById('g-meta').value,
         photo: guestPhotoData || null,
         date: new Date().toISOString().slice(0,10),
-        createdAt: serverTimestamp()
+        screens: getSelectedScreens('g')
       });
       clearGuestForm();
     } catch(e){ alert('เกิดข้อผิดพลาด: '+e.message); }
@@ -359,14 +566,15 @@
     document.getElementById('g-name').value='';
     document.getElementById('g-company').value='';
     document.getElementById('g-meta').value='';
-    document.getElementById('g-photo').value='';
-    document.getElementById('g-drop-label').textContent = 'คลิกเพื่ออัปโหลดรูป หรือเว้นว่างไว้';
-    guestPhotoData = null;
+    document.getElementById('g-time-h').value='10';
+    document.getElementById('g-time-m').value='00';
+    document.querySelectorAll('.g-screen-cb').forEach(cb => cb.checked = false);
+    removeGuestPhoto();
   };
 
   window.removeGuest = async function(id){
     if(!confirm('ลบแขกรายนี้?')) return;
-    await deleteDoc(doc(db, 'guests', id));
+    await pb.collection('guests').delete(id);
   };
 
   // ---- add news ----
@@ -376,12 +584,12 @@
     const btn = document.querySelector('[onclick="addNews()"]');
     btn.textContent = 'กำลังบันทึก...'; btn.disabled = true;
     try {
-      await addDoc(collection(db, 'news'), {
+      await pb.collection('news').create({
         type: document.getElementById('n-type').value,
         date: document.getElementById('n-date').value,
         title: title,
         desc: document.getElementById('n-desc').value,
-        createdAt: serverTimestamp()
+        screens: getSelectedScreens('n')
       });
       clearNewsForm();
     } catch(e){ alert('เกิดข้อผิดพลาด: '+e.message); }
@@ -392,11 +600,12 @@
     document.getElementById('n-title').value='';
     document.getElementById('n-date').value='';
     document.getElementById('n-desc').value='';
+    document.querySelectorAll('.n-screen-cb').forEach(cb => cb.checked = false);
   };
 
   window.removeNews = async function(id){
     if(!confirm('ลบประกาศนี้?')) return;
-    await deleteDoc(doc(db, 'news', id));
+    await pb.collection('news').delete(id);
   };
 
   // ---- render functions ----
@@ -408,7 +617,6 @@
       const row = document.createElement('div');
       row.className='list-row';
       row.innerHTML = `
-        <img class="avatar" src="${g.photo || 'https://placehold.co/100x100/E4E0D6/5B6B7A?text='+encodeURIComponent(g.name[0])}">
         <div class="info">
           <div class="name">${g.time} · ${g.name}</div>
           <div class="meta">${g.company || '-'} ${g.meta ? '· '+g.meta : ''}</div>
@@ -438,6 +646,20 @@
       `;
       list.appendChild(row);
     });
+
+    // preview ด้านขวา
+    const pv = document.getElementById('pv-news-list');
+    if(!news.length){
+      pv.innerHTML = '<div class="empty" style="font-size:10px;">ยังไม่มีประกาศ</div>';
+    } else {
+      pv.innerHTML = news.slice(0,4).map(n=>`
+        <div class="pv-news-item">
+          <div class="tag">${labels[n.type]||''}</div>
+          <div class="ttl">${n.title}</div>
+          <div class="dsc">${n.desc||''}</div>
+        </div>
+      `).join('');
+    }
   }
 
   function renderPreview(){
@@ -449,7 +671,6 @@
     }
     wrap.innerHTML = guests.slice(0,4).map(g=>`
       <div class="preview-guest">
-        <img src="${g.photo || 'https://placehold.co/60x60/333/fff?text='+encodeURIComponent(g.name[0])}">
         <div class="t">${g.time}</div>
         <div>
           <div class="n">${g.name}</div>
@@ -459,23 +680,164 @@
     `).join('');
   }
 
-  // ---- Firestore listeners (เรียลไทม์) ----
+  // ---- PocketBase: โหลดข้อมูล + realtime ----
   const today = new Date().toISOString().slice(0,10);
 
-  onSnapshot(query(collection(db,'guests'), orderBy('time')), snap=>{
-    guests = [];
-    snap.forEach(d => {
-      const g = d.data();
-      if(g.date === today) guests.push({ id: d.id, ...g });
-    });
-    renderGuests();
-  });
+  async function loadGuests(){
+    try{
+      guests = await pb.collection('guests').getFullList({
+        filter: pb.filter('date = {:d}', { d: today }),
+        sort: 'time'
+      });
+      renderGuests();
+    }catch(e){ console.error('โหลดรายชื่อแขกไม่สำเร็จ', e); }
+  }
 
-  onSnapshot(query(collection(db,'news'), orderBy('createdAt')), snap=>{
-    news = [];
-    snap.forEach(d => news.push({ id: d.id, ...d.data() }));
-    renderNews();
-  });
+  async function loadNews(){
+    try{
+      news = await pb.collection('news').getFullList({ sort: 'created' });
+      renderNews();
+    }catch(e){ console.error('โหลดข่าวไม่สำเร็จ', e); }
+  }
+
+  async function loadPhotos(){
+    try{
+      photos = await pb.collection('photos').getFullList({ sort: '-created' });
+      renderPhotos();
+    }catch(e){ console.error('โหลดรูปภาพไม่สำเร็จ', e); }
+  }
+
+  async function loadScreens(){
+    try{
+      const records = await pb.collection('screens').getFullList({ sort: 'created' });
+      SCREENS = records.map(r => ({ id: r.key, label: r.name, _recordId: r.id }));
+      renderScreenList();
+      refreshScreenSelectors();
+      renderSettingsForm();
+    }catch(e){ console.error('โหลดรายชื่อจอไม่สำเร็จ', e); }
+  }
+
+  window.addScreen = async function(){
+    const key = document.getElementById('sc-key').value.trim();
+    const name = document.getElementById('sc-name').value.trim();
+    if(!key || !name){ alert('กรุณากรอกทั้งรหัสจอและชื่อจอ'); return; }
+    if(/[\s,]/.test(key)){ alert('รหัสจอห้ามมีเว้นวรรคหรือ comma'); return; }
+    const btn = document.querySelector('[onclick="addScreen()"]');
+    btn.textContent = 'กำลังบันทึก...'; btn.disabled = true;
+    try{
+      await pb.collection('screens').create({ key: key, name: name });
+      document.getElementById('sc-key').value = '';
+      document.getElementById('sc-name').value = '';
+    }catch(e){ alert('เกิดข้อผิดพลาด: '+e.message); }
+    btn.textContent = '+ เพิ่มจอนี้'; btn.disabled = false;
+  };
+
+  window.removeScreen = async function(recordId){
+    if(!confirm('ลบจอนี้? (ข้อมูลแขก/ข่าว/รูปที่เคยเลือกจอนี้ไว้จะไม่ถูกลบ แค่เลิกผูกกับจอนี้)')) return;
+    await pb.collection('screens').delete(recordId);
+  };
+
+  function renderScreenList(){
+    const list = document.getElementById('screen-list');
+    document.getElementById('screen-count').textContent = SCREENS.length;
+    if(!SCREENS.length){
+      list.innerHTML = '<div class="empty">ยังไม่มีจอที่ลงทะเบียนไว้ — ตอนนี้ข้อมูลทั้งหมดขึ้นจอเดียวที่มีอยู่ตามปกติ</div>';
+      return;
+    }
+    // ลิงก์เต็มสำหรับเปิดจอนี้ — คำนวณจากที่อยู่ของหน้า Admin ตอนนี้เอง
+    // (ใช้ได้เมื่อไฟล์ admin.html กับ display.html วางอยู่ในโฟลเดอร์เดียวกัน เช่น pb_public/)
+    const baseUrl = location.origin + location.pathname.replace(/[^/]+$/, '');
+    list.innerHTML = '';
+    SCREENS.forEach(s=>{
+      const fullUrl = baseUrl + 'display.html?screen=' + encodeURIComponent(s.id);
+      const row = document.createElement('div');
+      row.className = 'list-row';
+      row.innerHTML = `
+        <div class="info">
+          <div class="name">${s.label}</div>
+          <div class="meta">รหัสจอ: ${s.id}</div>
+          <div class="meta" style="margin-top:6px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <a href="${fullUrl}" target="_blank" style="color:var(--amber); text-decoration:underline;">เปิดจอนี้ (ทดสอบ)</a>
+            <button type="button" class="btn btn-ghost" style="padding:4px 10px; font-size:12px;" onclick="copyScreenLink('${fullUrl}', this)">คัดลอกลิงก์</button>
+          </div>
+        </div>
+        <button class="icon-btn" onclick="removeScreen('${s._recordId}')">ลบ</button>
+      `;
+      list.appendChild(row);
+    });
+  }
+
+  window.copyScreenLink = function(url, btn){
+    navigator.clipboard.writeText(url).then(()=>{
+      const original = btn.textContent;
+      btn.textContent = 'คัดลอกแล้ว ✓';
+      setTimeout(()=>{ btn.textContent = original; }, 1500);
+    }).catch(()=>{ alert('คัดลอกไม่สำเร็จ ลองเลือกข้อความเองแทน: '+url); });
+  };
+
+  loadGuests();
+  loadNews();
+  loadPhotos();
+  loadScreens();
+
+  // realtime: เมื่อมีการ เพิ่ม/แก้/ลบ ใน collection ให้โหลดใหม่ทั้งชุด
+  pb.collection('guests').subscribe('*', ()=> loadGuests());
+  pb.collection('news').subscribe('*', ()=> loadNews());
+  pb.collection('photos').subscribe('*', ()=> loadPhotos());
+  pb.collection('screens').subscribe('*', ()=> loadScreens());
+
+  // ---- settings: เวลาแสดงผลแต่ละหน้าจอ (แยกตั้งได้ต่อจอ) ----
+  let settingsRecords = []; // records ทั้งหมดจาก collection 'settings' แต่ละอันมี screen + view_duration_sec
+
+  async function loadSettings(){
+    try{
+      settingsRecords = await pb.collection('settings').getFullList({ sort: 'created' });
+    }catch(e){
+      console.error('โหลดการตั้งค่าไม่สำเร็จ', e);
+      settingsRecords = [];
+    }
+    renderSettingsForm();
+  }
+
+  function renderSettingsForm(){
+    const container = document.getElementById('settings-screen-list');
+    if(!container) return;
+    const items = [{ id: '', label: 'จอหลัก (ค่าเริ่มต้นของทุกจอ)' }, ...SCREENS];
+    container.innerHTML = items.map(it => {
+      const rec = settingsRecords.find(r => (r.screen || '') === it.id);
+      const val = rec ? rec.view_duration_sec : 8;
+      return `
+        <div class="field" style="margin-bottom:14px; max-width:320px;">
+          <label>${it.label}</label>
+          <input type="number" min="3" max="120" step="1" value="${val}" autocomplete="off"
+                 class="settings-duration-input" data-screen="${it.id}">
+        </div>
+      `;
+    }).join('');
+  }
+
+  window.saveAllSettings = async function(){
+    const inputs = document.querySelectorAll('.settings-duration-input');
+    const btn = document.querySelector('[onclick="saveAllSettings()"]');
+    btn.textContent = 'กำลังบันทึก...'; btn.disabled = true;
+    try{
+      for(const inp of inputs){
+        const screenId = inp.dataset.screen;
+        const val = Number(inp.value) || 8;
+        const existing = settingsRecords.find(r => (r.screen || '') === screenId);
+        if(existing){
+          await pb.collection('settings').update(existing.id, { view_duration_sec: val });
+        } else {
+          await pb.collection('settings').create({ screen: screenId, view_duration_sec: val });
+        }
+      }
+      alert('บันทึกการตั้งค่าเรียบร้อย');
+    }catch(e){ alert('เกิดข้อผิดพลาด: '+e.message); }
+    btn.textContent = 'บันทึกการตั้งค่า'; btn.disabled = false;
+  };
+
+  loadSettings();
+  pb.collection('settings').subscribe('*', ()=> loadSettings());
 
   // ---- clock ----
   function tick(){
