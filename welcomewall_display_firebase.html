@@ -83,6 +83,14 @@
     display:flex; align-items:center; gap:clamp(12px,2.2vw,32px);
     padding:clamp(14px,3vh,44px) 0;
     border-bottom:1px solid var(--line);
+    border-radius:10px;
+  }
+  @keyframes arrivalPulse{
+    0%, 100% { background:transparent; }
+    15%, 45%, 75% { background:rgba(63,138,92,0.16); }
+  }
+  .guest-row.just-arrived{
+    animation:arrivalPulse 2.6s ease-in-out 2;
   }
   .guest-time{
     width:clamp(56px,7vw,110px); flex-shrink:0;
@@ -231,6 +239,30 @@
   tick(); setInterval(tick, 1000*30);
 
   // ---- render guests on display ----
+  // ---- แจ้งเตือนเมื่อแขกเปลี่ยนสถานะเป็น "ถึงแล้ว" (ไฮไลต์แถว + เสียงสั้นๆ) ----
+  let previousArrivedIds = null; // null = ยังไม่เคยโหลดข้อมูลเลย (รอบแรกเปิดหน้า ไม่ต้องแจ้งเตือนย้อนหลัง)
+
+  function playArrivalSound(){
+    try{
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const now = ctx.currentTime;
+      [0, 0.45, 0.9].forEach((offset) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = 1046.5; // เสียง "ติ๊ง" สั้นๆ โน้ตเดียว ซ้ำ 3 ครั้ง
+        gain.gain.setValueAtTime(0.0001, now + offset);
+        gain.gain.exponentialRampToValueAtTime(0.25, now + offset + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + offset + 0.28);
+        osc.connect(gain).connect(ctx.destination);
+        osc.start(now + offset);
+        osc.stop(now + offset + 0.32);
+      });
+    }catch(e){
+      console.error('เล่นเสียงแจ้งเตือนไม่สำเร็จ (บางเบราว์เซอร์ต้องมีการคลิกหน้าจอก่อนถึงจะเล่นเสียงได้)', e);
+    }
+  }
+
   function renderGuestDisplay(guests){
     const container = document.getElementById('guest-list-display');
     if(!container) return;
@@ -243,9 +275,15 @@
     const headEl = document.getElementById('welcome-head');
     if(headEl) headEl.innerHTML = 'ยินดีต้อนรับแขกที่มาเยือน<br><b>วันนี้ทั้งหมด '+guests.length+' ราย</b>';
 
+    const currentArrivedIds = new Set(guests.filter(g => g.status === 'arrived').map(g => g.id));
+    const isFirstLoad = previousArrivedIds === null;
+    let hasNewArrival = false;
+
     guests.forEach(g=>{
+      const isNewlyArrived = !isFirstLoad && g.status === 'arrived' && !previousArrivedIds.has(g.id);
+      if(isNewlyArrived) hasNewArrival = true;
       const row = document.createElement('div');
-      row.className = 'guest-row';
+      row.className = 'guest-row' + (isNewlyArrived ? ' just-arrived' : '');
       row.innerHTML = `
         <div class="guest-time">${g.time}</div>
         <img class="guest-avatar" src="${g.photo || 'https://placehold.co/128x128/E4E0D6/7A7A7A?text='+encodeURIComponent(g.name[0]||'?')}" alt="">
@@ -257,6 +295,9 @@
       `;
       container.appendChild(row);
     });
+
+    previousArrivedIds = currentArrivedIds;
+    if(!isFirstLoad && hasNewArrival) playArrivalSound();
   }
 
   // ---- render news on display ----
